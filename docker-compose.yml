@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  qmk:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: qmk_firmware
+    volumes:
+      - ./:/qmk_firmware
+    tty: true
+    stdin_open: true
