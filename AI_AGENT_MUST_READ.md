@@ -8,6 +8,8 @@ To compile the firmware, run the following command in your terminal:
 export PATH=$PATH:/home/matt/.local/bin && /home/matt/.local/bin/qmk compile -kb keychron/q4_pro/iso -km default
 ```
 
+**Note:** This is the primary keyboard for the user. The `qmk flash` command will wait for the device to enter DFU mode, so you can run the command and then put the keyboard into DFU mode.
+
 ## Flashing the Firmware
 
 To flash the firmware, you first need to put your keyboard into DFU (Device Firmware Update) mode.
@@ -22,3 +24,4 @@ Once your keyboard is in DFU mode, run the following command in your terminal to
 
 ```bash
 export PATH=$PATH:/home/matt/.local/bin && /home/matt/.local/bin/qmk flash -kb keychron/q4_pro/iso -km default
+```
